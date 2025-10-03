@@ -132,22 +132,32 @@ footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center;paddi
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-left top">
-    <h1>Learning & Development Specialist</h1>
-    <br>
-    <br>
+    <h1 style="margin-bottom:8px;">Learning & Development Specialist</h1>
     <p class="muted">9+ years in L&D — Talent Management, Course creation, Instructional design, LMS rollouts, leadership development and HR analytics.</p>
-    <br>
-    <br>
     <p class="subtitle">I design learning experiences, implement LMS, and build capability frameworks that align learning with business outcomes.</p>
     <a class="btn" href="assets/Tejas Pitale resume.pdf" download>📄 Download Resume</a>
   </div>
-
   <div class="hero-right center">
     <img class="profile" src="assets/tejasprofile.jpeg" alt="Tejas Pitale — profile photo">
     <lottie-player src="assets/growthmindset.json" background="transparent" speed="1" style="width:160px;height:160px;margin-top:12px" loop autoplay></lottie-player>
   </div>
 </section>
-
+<style>
+.hero {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  background: linear-gradient(135deg,var(--accent),var(--accent2));
+  color: white;
+  padding: 34px;
+  border-radius: 14px;
+  align-items: flex-start; /* 👈 pushes text to top */
+  margin-top: 18px;
+}
+.hero-left { flex: 1; text-align: left; } /* 👈 ensures left align */
+.hero h1 { font-size: clamp(20px, 3.8vw, 32px); margin: 0; }
+</style>
+  
 <!-- ABOUT -->
 <section id="about">
   <lottie-player src="assets/Circle Grow.json" background="transparent" class="lottie-bg" style="width:300px;height:300px;top:-50px;right:-50px;" speed="1" loop autoplay></lottie-player>
@@ -214,10 +224,9 @@ footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center;paddi
 <!-- CERTIFICATIONS -->
 <section id="certifications" class="certificates">
   <lottie-player src="assets/Circle Grow.json" background="transparent" class="lottie-bg" style="width:180px;height:180px;top:-20px;left:10px;" speed="1" loop autoplay></lottie-player>
-
   <div class="cert-header">Certifications</div>
   <div class="cert-container">
-    <a class="cert-card" href="assets/Coursera ALDZ8UB5ZQYA.jpg" target="_blank" data-alt="Accelarate your learning with GPT" data-img="assets/Coursera ALDZ8UB5ZQYA.jpg"><p>Accelerate your learning with GPT</p></a>
+    <a class="cert-card" href="assets/Coursera ALDZ8UB5ZQYA.jpg" target="_blank"> <img src="assets/Coursera ALDZ8UB5ZQYA.jpg" alt="Accelarate your learning with GPT"> <data-img="assets/Coursera ALDZ8UB5ZQYA.jpg"><p>Accelerate your learning with GPT</p></a>
     <a class="cert-card" href="assets/Instructional Design Foundations and Applications.jpg" target="_blank" data-alt="Instructional Design Foundations" data-img="assets/Instructional Design Foundations and Applications.jpg"><p>Instructional Design Foundations & Applications</p></a>
     <a class="cert-card" href="assets/Learning and Development.jpg" target="_blank" data-alt="Learning and Development" data-img="assets/Learning and Development.jpg"><p>Learning & Development</p></a>
     <a class="cert-card" href="assets/Learning Experience Design Orientation to the Profession.jpg" target="_blank" data-alt="Learning Experience Design Orientation" data-img="assets/Learning Experience Design Orientation to the Profession.jpg"><p>Learning Experience Design Orientation</p></a>
@@ -427,5 +436,6 @@ window.addEventListener('error', (evt) => {
 </script>
 </body>
 </html>
+
 
 
